@@ -6,6 +6,7 @@ RUN apt-get update && \
   mkdir /var/log/supervisord /var/run/supervisord
 
 COPY supervisord.conf /
+COPY smb.conf /etc/samba/smb.conf
 
 ENV NEXTCLOUD_UPDATE=1
 
